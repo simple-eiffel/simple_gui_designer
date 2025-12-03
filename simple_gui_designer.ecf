@@ -28,6 +28,6 @@
 	<target name="simple_gui_designer_tests" extends="simple_gui_designer">
 		<root class="ANY" feature="default_create"/>
 		<library name="testing" location="$ISE_LIBRARY\library\testing\testing.ecf"/>
-		<cluster name="testing" location=".\testing\" recursive="true"/>
+		<cluster name="tests" location=".\testing\" recursive="true"/>
 	</target>
 </system>
