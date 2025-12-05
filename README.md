@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ljr1981/claude_eiffel_op_docs/main/artwork/LOGO.png" alt="simple_ library logo" width="400">
+</p>
+
 # Simple GUI Designer
 
 A web-based GUI specification designer built with Eiffel and HTMX. Design application screens visually using drag-and-drop, then export the specification as JSON for code generation or documentation.
