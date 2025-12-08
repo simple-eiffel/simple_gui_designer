@@ -21,6 +21,7 @@
 		<library name="simple_web" location="$SIMPLE_WEB\simple_web.ecf"/>
 		<library name="simple_htmx" location="$SIMPLE_HTMX\simple_htmx.ecf"/>
 		<library name="simple_testing" location="$SIMPLE_TESTING\simple_testing.ecf"/>
+		<library name="testing" location="$ISE_LIBRARY\library\testing\testing.ecf"/>
 		<cluster name="src" location=".\src\" recursive="true"/>
 	</target>
 	<target name="simple_gui_designer_app" extends="simple_gui_designer">
