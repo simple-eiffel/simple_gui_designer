@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+- Testing config updates, AutoTest fixes, .gitignore cleanup
+- Add SCOOP concurrency capability
+- Migrate to simple_testing library
+- Update AI productivity docs for Session 3
+- Fix control loading bugs, add DBC and regression tests
+- Refactor HTML rendering to use simple_htmx fluent builders
+- Refactor GUI_DESIGNER_SERVER using multiple inheritance
+- Add AI productivity documentation
+- Fix test target cluster name conflict, add stub test
+- Initial commit: HTMX-based GUI specification designer
+
 ## [1.0.0] - 2025-12-08
 
 ### Added
