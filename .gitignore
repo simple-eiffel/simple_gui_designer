@@ -1,26 +1,26 @@
-# EiffelStudio build output
+# Eiffel build artifacts
 EIFGENs/
+Documentation/
 
-# Log files
-*.log
-system.log
+# Compiled files
+*.melted
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib
 
-# IDE and editor files
+# Backup files
 *.swp
-*.swo
+*.bak
 *~
+
+# IDE files
 .vscode/
 .idea/
 
-# OS generated files
+# OS files
 .DS_Store
 Thumbs.db
-desktop.ini
 
-# Backup files
-*.bak
-*.backup
-*.orig
-
-# Claude Code settings (local only)
-.claude/settings.local.json
