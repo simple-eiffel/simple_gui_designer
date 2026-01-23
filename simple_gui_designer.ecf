@@ -29,7 +29,7 @@
 		<setting name="console_application" value="true"/>
 	</target>
 	<target name="simple_gui_designer_tests" extends="simple_gui_designer">
-		<root class="ANY" feature="default_create"/>
+		<root class="TEST_APP" feature="make"/>
 		<cluster name="tests" location=".\testing\" recursive="true"/>
 	</target>
 </system>
