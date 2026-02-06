@@ -78,7 +78,7 @@ feature {NONE} -- Initialization
 				log_debug ("[INIT] Directory exists, creating JSON parser")
 				create l_json
 				log_debug ("[INIT] JSON parser created, iterating files")
-				across l_dir.linear_representation as al_entry loop
+				across l_dir.entries as al_entry loop
 					log_debug ("[INIT] Checking file: " + al_entry)
 					if al_entry.ends_with (".json") then
 						l_file_path := specs_directory + "/" + al_entry
