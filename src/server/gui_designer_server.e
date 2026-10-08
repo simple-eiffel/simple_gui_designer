@@ -70,6 +70,7 @@ feature {NONE} -- Initialization
 			l_dir: DIRECTORY
 			l_json: SIMPLE_JSON
 			l_file_path: STRING_32
+			l_name: STRING_32
 			l_parsed: detachable SIMPLE_JSON_VALUE
 		do
 			log_debug ("[INIT] Loading specs from directory: " + specs_directory)
@@ -79,9 +80,10 @@ feature {NONE} -- Initialization
 				create l_json
 				log_debug ("[INIT] JSON parser created, iterating files")
 				across l_dir.entries as al_entry loop
-					log_debug ("[INIT] Checking file: " + al_entry)
-					if al_entry.ends_with (".json") then
-						l_file_path := specs_directory + "/" + al_entry
+					l_name := al_entry.name.to_string_32
+					log_debug ("[INIT] Checking file: " + s8 (l_name))
+					if l_name.ends_with (".json") then
+						l_file_path := specs_directory + "/" + l_name
 						log_debug ("[INIT] Attempting to parse: " + s8 (l_file_path))
 						l_parsed := l_json.parse_file (l_file_path)
 						log_debug ("[INIT] Parse complete, checking result")
@@ -93,7 +95,7 @@ feature {NONE} -- Initialization
 									log_debug ("[INIT] Got object, checking keys")
 									if al_obj.has_key ("app_name") or al_obj.has_key ("app") then
 										log_debug ("[INIT] Has app key, calling load_spec_from_json")
-										load_spec_from_json (al_obj, al_entry)
+										load_spec_from_json (al_obj, l_name)
 									else
 										log_warning ("[INIT] Skipping file without app_name/app: " + s8 (l_file_path))
 									end

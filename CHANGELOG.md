@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+- GUI_DESIGNER_SERVER.load_specs_from_directory treated `DIRECTORY.entries` items as strings; they are PATH
+  (VEEN, VWOE x2, VUAR). The file name is now taken from `PATH.name`.
+
 ### Changed
 - Testing config updates, AutoTest fixes, .gitignore cleanup
 - Add SCOOP concurrency capability
